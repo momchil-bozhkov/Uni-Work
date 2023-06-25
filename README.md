@@ -1,5 +1,11 @@
-# Uni-Work
+Momchil Bozhkov, Aleksandar Sinanev
 
-This repository contains a comprehensive collection of coding tasks completed during my studies at university. It is organized into branches, with each branch representing a distinct programming language. Within
-each branch, coding tasks are further categorized into folders based on the subject or module they pertain to. Each folder contains the source code, relevant resources, and a detailed README file providing an
-overview of the task, instructions for execution, and any additional notes or dependencies.
+The web page we have created is an online alcohol purchasing site designed with simplicity and user-friendliness in mind.
+
+The page consists of two main sortable tables, one of which is used to represent our best selling products whilst the other presents the option of adding new products.
+
+Navigating is made easy by a conveniently placed navigation tab, located at the top of the page, which can be used to reach each highlight section we have. It is also able to support mobile devices, tablets and the most popular browsers for desktop.
+
+The images associated with different products each have a short text describing them.
+
+Regarding accessibility, we have identified WCAG guidelines 1.1, 2.1 and 2.4 as being the most important for our page.

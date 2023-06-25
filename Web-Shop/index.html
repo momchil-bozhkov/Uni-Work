@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MБT</title>
+    <meta name="description" content="fictitius supermarket webshop" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <abbr title="Млади Богати Тарикати">MБT</abbr>
+          </a>
+        </li>
+        <li>
+          <a href="#popularProducts"> Popular products </a>
+        </li>
+        <li>
+          <a href="#allProducts"> All products </a>
+        </li>
+        <li>
+          <a href="#brandIdentity"> About us </a>
+        </li>
+        <li>
+          <a href="#contacts"> Contacts </a>
+        </li>
+        <li class="right" onclick="resetData()">
+          <a> Reset </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="brandIdentity">
+      <h2>Welcome to our online alcoholics department</h2>
+
+      <div class="partition">
+        <dl>
+          <dt>Here you will find all the guilty pleasures</dt>
+          <dd>And much more</dd>
+        </dl>
+      </div>
+
+      <div class="partition">
+        <p><em>From the finest well-aged whiskey and wine</em></p>
+        <pre>To the most exclusive champagne and vodka</pre>
+      </div>
+
+      <div class="partition">
+        <h4>Some of our top priorities:</h4>
+        <ol>
+          <li>Quality</li>
+          <li>Experience when purchasing</li>
+          <li>Price</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="popularProducts">
+      <table id="t01">
+        <caption>
+          <h1>Best selling Products</h1>
+        </caption>
+        <tr>
+          <th onclick="sortTable(0, 't01')">Product</th>
+          <th onclick="sortTable(1, 't01')">Origin</th>
+          <th onclick="sortTable(2, 't01')">Best before</th>
+          <th onclick="sortTable(3, 't01')">Amount</th>
+          <th>Image</th>
+        </tr>
+        <tr>
+          <td>Moët & Chandon Brut Impérial</td>
+          <td>France</td>
+          <td>N/A</td>
+          <td>15</td>
+          <td>
+            <img
+              src="https://d3r6kbofdnmd8.cloudfront.net/media/catalog/product/cache/image/1536x/a4e40ebdc3e371adff845072e1c73f37/M/H/MH006_Moet---Chandon-Brut-Imperial-075L-12-Vol_4.jpg"
+              alt="Moet & Chandon"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Beluga</td>
+          <td>Russia</td>
+          <td>N/A</td>
+          <td>20</td>
+          <td>
+            <img
+              src="https://media-verticommnetwork1.netdna-ssl.com/wines/vodka-beluga-noble-jeroboam-3l-841508-s209_e.jpg"
+              alt="Beluga"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Glenfiddich 21</td>
+          <td>Scotland</td>
+          <td>N/A</td>
+          <td>69</td>
+          <td>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/91EYoI%2BrO8L._AC_SL1500_.jpg"
+              alt="Glenfiddich"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="allProducts">
+      <form
+        id="productForm"
+        action="https://wt.ops.labs.vu.nl/api21/dd6b7727"
+        method="post"
+      >
+        <table id="t02">
+          <caption>
+            <h1>All Products</h1>
+          </caption>
+          <tr>
+            <th>ID</th>
+            <th onclick="sortTable(0, 't02')">Product</th>
+            <th onclick="sortTable(1, 't02')">Origin</th>
+            <th onclick="sortTable(2, 't02')">Best before</th>
+            <th onclick="sortTable(3, 't02')">Amount</th>
+            <th>Image</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <th>N/A</th>
+            <th>
+              <input
+                type="text"
+                id="product"
+                name="product"
+                placeholder="Product name..."
+                required
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                id="origin"
+                name="origin"
+                placeholder="Origin..."
+              />
+            </th>
+            <th>
+              <input
+                type="date"
+                id="best_before_date"
+                name="best_before_date"
+              />
+            </th>
+            <th>
+              <input
+                type="number"
+                id="amount"
+                name="amount"
+                placeholder="Amount..."
+                required
+              />
+            </th>
+            <th>
+              <input
+                type="url"
+                id="image"
+                name="image"
+                placeholder="Image link..."
+              />
+            </th>
+            <th><input class="submit" type="submit" value="Submit" /></th>
+          </tr>
+        </table>
+      </form>
+    </section>
+
+    <footer id="contacts">
+      <p>
+        Support:
+        <a href="mailto:m.bozhkov@student.vu.nl">m.bozhkov@student.vu.nl</a>
+      </p>
+      <p>Authors: Alexander & Momchil</p>
+    </footer>
+  </body>
+</html>
