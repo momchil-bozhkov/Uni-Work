@@ -9,8 +9,8 @@ int main(int argc, char* argv[]) {
         }
         else {
             std::string fileName = argv[1];
-            Maze Maze = MazeLoader::LoadMazeFromFile("test_files/" + fileName);
-            Maze.PrintMaze();
+            Maze Maze = MazeLoader::LoadMazeFromFile(fileName);
+            Maze.ExecuteMoves();
         }
     }
     catch(const std::exception& excpt) {
